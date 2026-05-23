@@ -292,7 +292,13 @@ body{
 
 /* ── COLOR DOTS ── */
 .palette{display:flex;gap:10px;justify-content:center;margin:16px 0}
-.dot{width:70px;height:70px;border-radius:70%;border:2px solid rgba(0,0,0,.1)}
+.dot{width:70px;height:70px;border-radius:70%;border:2px solid rgba(0,0,0,.1);flex-shrink:0}
+.dot-butter{
+  background-color:#F6EDCE;
+  background-image:
+    linear-gradient(145deg,rgba(255,255,255,.4) 0%,transparent 55%),
+    linear-gradient(325deg,rgba(218,190,130,.25) 0%,transparent 50%);
+}
 
 .dresscode-look{
   width:100%;
@@ -987,6 +993,7 @@ body{
       <img src="brown2.png" class="dot" style="object-fit:cover;padding:0;margin-left:-14px">
       <img src="brown3.png" class="dot" style="object-fit:cover;padding:0;margin-left:-14px">
       <img src="brown4.png" class="dot" style="object-fit:cover;padding:0;margin-left:-14px">
+      <div class="dot dot-butter" style="margin-left:-14px" title="Сливочный" aria-hidden="true"></div>
     </div>
     <div class="dresscode-look">
       <img src="people/dresscode-women.png" alt="Примеры нарядов в палитре дресс-кода">
@@ -1003,7 +1010,7 @@ body{
   <h2 class="sec-heading">Анкета</h2>
   <p class="body-text footer-rsvp-text">Заполните, пожалуйста, короткую анкету — так нам будет проще всё организовать и подготовиться к празднику.</p>
   <!-- TODO: замените ссылку на вашу Google Form -->
-  <a href="https://forms.gle/XXXXXXXX" class="rsvp-btn" target="_blank" rel="noopener noreferrer">Заполнить анкету</a>
+  <a href="https://forms.gle/kALaChW7wNyGsie78" class="rsvp-btn" target="_blank" rel="noopener noreferrer">Заполнить анкету</a>
 </div>
 
 <!-- ═══ ДО ВСТРЕЧИ / ОБРАТНЫЙ ОТСЧЁТ ═══ -->
